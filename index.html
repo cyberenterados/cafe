@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café La Poesía | Bar Notable</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes clásicas y elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Café La Poesía</div>
+        <div class="nav-links">
+            <a href="#historia">Historia</a>
+            <a href="#menu">La Carta</a>
+            <a href="#visitanos">Visitanos</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Tradición en cada taza.</h1>
+            <p>Desde 1928, un refugio de madera, mármol y café recién molido en el corazón de Buenos Aires.</p>
+            <a href="/Menu_Cafe_Notable.pdf" class="btn-classic" target="_blank">Ver nuestra Carta</a>
+        </div>
+    </header>
+
+    <!-- Historia Breve -->
+    <section id="historia" class="historia-section">
+        <div class="container">
+            <h2>El encanto de lo eterno</h2>
+            <hr class="separator">
+            <p>Sentarse en nuestras mesas es viajar en el tiempo. Conservamos el mobiliario original, la boiserie de roble y el oficio de nuestros mozos de antaño. El ambiente perfecto para leer, escribir, o simplemente ver pasar la vida por la ventana junto a un buen cortado.</p>
+        </div>
+    </section>
+
+    <!-- Menú interactivo -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nuestra Carta</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-target="cafeteria">Cafetería</button>
+                <button class="tab-btn" data-target="desayunos">Desayunos</button>
+                <button class="tab-btn" data-target="licuados">Licuados</button>
+            </div>
+
+            <div class="menu-content">
+                
+                <!-- Tab Cafetería -->
+                <div id="cafeteria" class="tab-pane active">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Café Chico o en Jarrito</h3>
+                            <span class="price">$ 2.200</span>
+                        </div>
+                        <p>El clásico porteño, intenso y con cuerpo.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Cortado o Lágrima</h3>
+                            <span class="price">$ 2.400</span>
+                        </div>
+                        <p>Equilibrio perfecto entre café y leche espumada.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>El Tradicional Submarino</h3>
+                            <span class="price">$ 3.500</span>
+                        </div>
+                        <p>Vaso de leche caliente con barra de chocolate amargo para derretir.</p>
+                    </div>
+                </div>
+
+                <!-- Tab Desayunos -->
+                <div id="desayunos" class="tab-pane">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>El Porteño</h3>
+                            <span class="price">$ 5.800</span>
+                        </div>
+                        <p>Café con leche, jugo de naranja chico y 3 medialunas de manteca o grasa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tostadas de Pan de Campo</h3>
+                            <span class="price">$ 4.500</span>
+                        </div>
+                        <p>Con manteca y mermelada casera de frutos rojos o durazno.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tostado Mixto en Pan de Miga</h3>
+                            <span class="price">$ 6.500</span>
+                        </div>
+                        <p>Finito, crocante, con abundante jamón cocido y queso.</p>
+                    </div>
+                </div>
+
+                <!-- Tab Licuados -->
+                <div id="licuados" class="tab-pane">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Banana a la Crema (o Leche)</h3>
+                            <span class="price">$ 3.800</span>
+                        </div>
+                        <p>Súper espeso, espumoso y servido bien frío.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Durazno o Frutilla al Agua</h3>
+                            <span class="price">$ 3.500</span>
+                        </div>
+                        <p>Fruta fresca de estación, ligero y refrescante.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="visitanos">
+        <p>Café La Poesía. Esquina de San Telmo, Buenos Aires. Abierto todos los días de 7:00 a 23:00.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
